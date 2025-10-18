@@ -10,6 +10,6 @@ public interface BookRepository extends JpaRepository<Book, Integer> {
     Optional<Book> getBookById(Integer id);
 
     @Transactional
-    void deleteBookByName(String name);
+    void deleteBookById(Integer id);
 
 }
